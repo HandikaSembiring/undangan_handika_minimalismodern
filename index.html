@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assests/css/style.css" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section id="cover">
+      <div id="cover-bg">
+        <div class="content-container">
+          <div class="flower-ornament-left">
+            <img
+              src="assests/img/flower-ornament-1.png"
+              alt="Flower Ornament Left"
+            />
+          </div>
+          <div class="flower-ornament-right">
+            <img
+              src="assests/img/flower-ornament-1.png"
+              alt="Flower Ornament Right"
+            />
+          </div>
+        </div>
+        <div id="cover-text">
+          <img
+            src="assests/img/wedding-ornament.png"
+            alt="Mahkota"
+            class="ornament-wedding"
+          />
+          <p class="wedding-of">The Wedding Of</p>
+          <h1 class="nama-pengantin">Sophia</h1>
+          <p class="and-text">&</p>
+          <h1 class="nama-pengantin">Jonathan</h1>
+          <p class="format-tamu">
+            Kepada Yth: <br />
+            Bapak/Ibu/Saudara/i
+          </p>
+          <p class="nama-tamu">[Nama Tamu]</p>
+        </div>
+        <div class="container">
+          <button class="btn-open-invitation" onclick="openInvitation()">
+            <i class="fa-solid fa-envelope-open"></i> Buka Undangan
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <nav class="navbar">
+      <div class="navbar-header">
+        <button class="navbar-toggle" onclick="toggleNavbar()">☰</button>
+      </div>
+      <ul class="navbar-list" id="navbar-list">
+        <li><a href="#cover">Home</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#pengantin">Pengantin</a></li>
+        <li><a href="#acara">Acara</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#tamu-khusus">Tamu Khusus</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+        <li><a href="#kirim-hadiah">Gift</a></li>
+        <li><a href="#wishes">Pesan</a></li>
+      </ul>
+    </nav>
+
+    <section id="quotes">
+      <img id="disc" src="assests/img/disc.png" alt="Disc" class="disc" />
+      <audio
+        id="audio"
+        src="assests/audio/Warm-Memories-Emotional-Inspiring-Piano(chosic.com).mp3"
+        preload="auto"
+      ></audio>
+
+      <div class="quotes-container">
+        <h2 class="h2-quote">
+          وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا
+          لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ
+          إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
+        </h2>
+        <blockquote>
+          <p>
+            "Dan di antara tanda-tanda-Nya adalah Dia menciptakan untukmu
+            istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa
+            tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan
+            sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat
+            tanda-tanda (kekuasaan Allah) bagi kaum yang berpikir."
+          </p>
+          <footer>Ar-Rum Ayat 21</footer>
+        </blockquote>
+        <div class="audio-container">
+          <audio controls>
+            <source
+              src="assests/audio/Y2meta.app - Ar-Rum ayat 21 (128 kbps).mp3"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="countdown-container">
+          <div class="countdown-box">
+            <span id="days">00</span>
+            <span class="label">Hari</span>
+          </div>
+          <div class="countdown-box">
+            <span id="hours">00</span>
+            <span class="label">Jam</span>
+          </div>
+          <div class="countdown-box">
+            <span id="minutes">00</span>
+            <span class="label">Menit</span>
+          </div>
+          <div class="countdown-box">
+            <span id="seconds">00</span>
+            <span class="label">Detik</span>
+          </div>
+        </div>
+        <button class="btn-save-date" onclick="saveDate()">
+          <i class="fa-regular fa-calendar"></i> Simpan Tanggal
+        </button>
+      </div>
+    </section>
+    <section id="pengantin">
+      <div class="pengantin-wanita-container">
+        <h1 class="pengantin-h1 kiri-h1">Sophia</h1>
+        <div class="pengantin-wanita-content">
+          <img
+            src="assests/img/profil-bride-2.png"
+            alt="Foto Sophia"
+            class="pengantin-wanita"
+          />
+          <div class="pengantin-info kanan-info">
+            <p class="nama-pengantin-2">Sophia Dwi M.Pd</p>
+            <p class="keterangan-anak">Putri ketiga</p>
+            <br />
+            <p class="orang-tua">Bapak Suparno & Ibu Sulas</p>
+            <div class="social-icons">
+              <a
+                href="https://wa.me/082121329566"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a
+                href="https://instagram.com/hndika.nh"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pengantin-pria-container">
+        <h1 class="pengantin-h1 kanan-h1">Jonathan</h1>
+        <div class="pengantin-pria-content">
+          <div class="pengantin-info kiri-info">
+            <p class="nama-pengantin-2">Jonathan S. Kom</p>
+            <p class="keterangan-anak">Putra pertama<br /></p>
+            <p class="orang-tua">Bapak Hendra & Ibu Lisa</p>
+            <div class="social-icons kanan-social">
+              <a
+                href="https://wa.me/082121329566"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a
+                href="https://instagram.com/hndika.nh"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <img
+            src="assests/img/profil-groom-2.png"
+            alt="Foto Jonathan"
+            class="pengantin-pria"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="acara">
+      <div class="container-acara">
+        <p class="p-akad">Akad Nikah</p>
+        <p class="details">
+          Tanggal: 20 November 2024<br />Waktu: 10:00 WIB<br />Tempat: Masjid
+          Al-Hikmah
+        </p>
+        <a
+          href="https://maps.google.com/?q=Masjid+Al-Hikmah"
+          target="_blank"
+          class="btn-lokasi"
+          >Lihat Lokasi</a
+        >
+      </div>
+      <div class="container-acara">
+        <p class="p-resepsi">Resepsi</p>
+        <p class="details">
+          Tanggal: 20 November 2024<br />Waktu: 13:00 WIB<br />Tempat: Hotel
+          Grand Ballroom
+        </p>
+        <a
+          href="https://maps.google.com/?q=Hotel+Grand+Ballroom"
+          target="_blank"
+          class="btn-lokasi"
+          >Lihat Lokasi</a
+        >
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="main-gallery-container">
+        <h2>Galeri Kami</h2>
+
+        <div class="video-section">
+          <video autoplay muted loop>
+            <source src="assests/video/prewedd-vid.mp4" type="video/mp4" />
+            Browser Anda tidak mendukung video tag.
+          </video>
+        </div>
+
+        <div class="image-carousel">
+          <img src="assests/img/galeri-1.heic" alt="Deskripsi Gambar 1" />
+          <img src="assests/img/galeri-2.heic" alt="Deskripsi Gambar 2" />
+          <img src="assests/img/galeri-3.heic" alt="Deskripsi Gambar 3" />
+          <img src="assests/img/galeri-4.heic" alt="Deskripsi Gambar 4" />
+          <img src="assests/img/galeri-5.heic" alt="Deskripsi Gambar 5" />
+          <img src="assests/img/galeri-6.heic" alt="Deskripsi Gambar 6" />
+        </div>
+      </div>
+    </section>
+
+    <section id="story">
+      <h1>Story</h1>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-img">
+            <img src="assests/img/galeri-1.heic" alt="Pertemuan Pertama" />
+          </div>
+          <div class="timeline-content">
+            <h2>Pertemuan Pertama</h2>
+            <p>
+              Kami pertama kali bertemu di sebuah acara teman. Sejak saat itu,
+              perjalanan kami penuh dengan kebahagiaan, tawa, dan cinta.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img">
+            <img src="assests/img/galeri-2.heic" alt="Momen Spesial" />
+          </div>
+          <div class="timeline-content">
+            <h2>Momen Spesial</h2>
+            <p>
+              Momen penting yang mengubah hidup kami terjadi saat kami
+              menghabiskan waktu bersama di perjalanan yang indah.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img">
+            <img src="assests/img/galeri-3.heic" alt="Hari Pertunangan" />
+          </div>
+          <div class="timeline-content">
+            <h2>Hari Pertunangan</h2>
+            <p>
+              Hari yang tidak terlupakan ketika kami merayakan pertunangan kami
+              di hadapan keluarga dan teman-teman terdekat.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img">
+            <img src="assests/img/galeri-4.heic" alt="Persiapan Pernikahan" />
+          </div>
+          <div class="timeline-content">
+            <h2>Persiapan Pernikahan</h2>
+            <p>
+              Setiap detail dari pernikahan kami dipersiapkan dengan cinta dan
+              dedikasi, menjadikannya sangat spesial.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tamu-khusus">
+      <h2>Tamu Khusus</h2>
+      <table class="invitees-table">
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Jabatan</th>
+            <th>Instansi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Bapak Jamal Kumar</td>
+            <td>Ketua RT</td>
+            <td>RT 005</td>
+          </tr>
+          <tr>
+            <td>Wakil Ketua</td>
+            <td>Organisasi XYZ</td>
+          </tr>
+          <tr>
+            <td colspan="2">Ibu Siti Humaira</td>
+            <td>Pengusaha</td>
+          </tr>
+          <tr>
+            <td>Dr. Ahmad Syahrir</td>
+            <td>Dokter</td>
+            <td>RSU Harapan</td>
+          </tr>
+          <tr>
+            <td>Mrs. Amanda Lee</td>
+            <td>Manajer</td>
+            <td>Perusahaan ABC</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="rsvp">
+      <h1>Konfirmasi Kehadiran</h1>
+      <div class="container-rsvp">
+        <form id="rsvp-form" onsubmit="submitRsvp(event)">
+          <label for="rsvpName">Nama:</label>
+          <input
+            type="text"
+            id="rsvpName"
+            name="rsvpName"
+            required
+            placeholder="Masukkan nama Anda"
+          />
+          <label for="rsvpEmail">Email:</label>
+          <input
+            type="email"
+            id="rsvpEmail"
+            name="rsvpEmail"
+            required
+            placeholder="Masukkan email Anda"
+          />
+          <label for="rsvpPhone">Nomor Telepon:</label>
+          <input
+            type="tel"
+            id="rsvpPhone"
+            name="rsvpPhone"
+            required
+            placeholder="Masukkan nomor telepon Anda"
+          />
+          <label for="guestCount">Jumlah Tamu:</label>
+          <select id="guestCount" name="guestCount" required>
+            <option value="" disabled selected>Pilih jumlah tamu</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="more">Lebih dari 5</option>
+          </select>
+          <fieldset>
+            <legend>Apakah Anda akan hadir?</legend>
+            <label>
+              <input type="radio" name="attendance" value="yes" required /> Ya
+            </label>
+            <label>
+              <input type="radio" name="attendance" value="no" /> Tidak
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Menu Makanan:</legend>
+            <label>
+              <input type="checkbox" name="food" value="chicken" /> Ayam
+            </label>
+            <label>
+              <input type="checkbox" name="food" value="beef" /> Daging Sapi
+            </label>
+            <label>
+              <input type="checkbox" name="food" value="vegetarian" />
+              Vegetarian
+            </label>
+          </fieldset>
+          <label for="rsvpMessage">Komentar:</label>
+          <textarea
+            id="rsvpMessage"
+            name="rsvpMessage"
+            rows="4"
+            placeholder="Tulis pesan Anda di sini..."
+          ></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="kirim-hadiah">
+        <div class="container-rekening">
+          <h2>Rekening</h2>
+          <p>Silakan transfer hadiah Anda ke rekening berikut:</p>
+          <p id="rekening">
+            Bank: BNI<br />Nomor Rekening:
+            <span id="nomor-rekening">59102790813</span><br />Atas Nama: John Doe
+          </p>
+          <button onclick="copyToClipboard()">Salin Nomor Rekening</button>
+          <img src="assests/img/BNI-Negara-Indonesia.png" alt="Rekening BNI" style="max-width: 100%; height: auto; margin-top: 20px;" />
+        </div>
+      </section>
+
+      <div class="container-hadiah">
+        <h2>Gift</h2>
+        <p>Silakan kirim hadiah Anda ke alamat berikut:</p>
+        <p id="alamat">
+          Jl. Contoh Alamat No. 123<br />Kota: Jakarta<br />Provinsi: DKI
+          Jakarta
+        </p>
+        <button onclick="copyAlamat()">Salin Alamat</button>
+      </div>
+    </section>
+
+    <section id="wishes">
+      <h2>Ucapkan Harapan</h2>
+      <form id="wishesForm" onsubmit="submitWishes(event)">
+        <div class="form-group">
+          <label for="wishName">Nama Anda:</label>
+          <input type="text" id="wishName" name="wishName" required />
+        </div>
+        <div class="form-group">
+          <label for="wishMessage">Pesan:</label>
+          <textarea
+            id="wishMessage"
+            name="wishMessage"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn">Kirim Ucapan</button>
+      </form>
+      <div id="messagesContainer"></div>
+    </section>
+    <section id="terima-kasih">
+      <div class="thank-you-container">
+        <h2>Terima Kasih</h2>
+        <p>
+          Terima kasih atas kehadiran dan doa restunya. Kami sangat menghargai
+          setiap momen yang Anda luangkan bersama kami.
+        </p>
+      </div>
+    </section>
+
+    <script src="assests/js/script.js"></script>
+  </body>
+</html>
